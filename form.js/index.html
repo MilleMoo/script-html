@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+        }
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        input{
+            margin-bottom: 10px;
+            width: 300px;
+            padding: 5px;
+        }
+        #error{
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+    <!-- สร้าง form ที่มี usernam, email, password, submit -->
+     <h2>ฟอร์มถอนรายวิชา</h2>
+     <form action="" id="dropForm">
+         <label for="username">Username</label>
+         <input type="text" name="username" id="username">
+     
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email">
+     
+         <label for="password">Password</label>
+         <input type="password" name="password" id="password">
+
+         <br>
+     
+         <button type="submit">Drop!!!</button>
+        </form>
+        <p id="error"></p>
+</body>
+</html>

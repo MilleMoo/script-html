@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main-title">ใส่หัวข้อหลัก</h1>
+    <div class="content">
+        <p>ย่อหน้า</p>
+        <p class="hilight">ย่อหน้าที่สอง</p>
+        <p>ย่อหน้าสุดท้าย</p>
+        <ul>
+            <li class="list-item">รายการที่ 1</li>
+            <li class="list-item">รายการที่ 2</li>
+            <li >รายการที่ 3</li>
+            <li >รายการที่ 4</li>
+        </ul>
+    </div>
+    <script>
+        // dom (document object model)
+        // getelementbyid
+        const title = document.getElementById("main-title");
+        console.log(title.innerText);
+        title.innerText = "ยินดีต้อนรับ"
+        title.style.color = "red";
+        //querySelector
+        const firstPargraph = document.querySelector("div.content p");
+        console.log(firstPargraph);
+        const hilight = document.querySelector(".hilight");
+        console.log(hilight);
+        //querySelectorAll
+        const item = document.querySelectorAll(".list-item");
+        console.log(item);
+        item.forEach((item) => {
+            item.style.color = "blue";
+        })
+    </script>
+</body>
+</html>
